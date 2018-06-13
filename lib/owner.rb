@@ -19,6 +19,10 @@ class Owner
     @@all.size
   end
 
+  def self.reset
+    @@all.clear
+  end
+
   def say_species
     "I am a #{@species}."
   end
