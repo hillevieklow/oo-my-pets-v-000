@@ -11,6 +11,10 @@ class Owner
     @@all << self
   end
 
+  def self.all
+    @@all
+  end
+
   def say_species
     "I am a #{@species}."
   end
@@ -42,6 +46,10 @@ class Owner
   def sell_pets
     @pets.each {|type, pet_array| pet_array.each {|pet| pet.mood = "nervous"}}
     @pets.clear
+  end
+
+  def list_pets
+    
   end
 
 end
