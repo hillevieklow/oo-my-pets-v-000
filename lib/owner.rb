@@ -1,7 +1,7 @@
 class Owner
 
   @@all = []
-  
+
   attr_accessor :name, :pets
   attr_reader :species
 
@@ -12,7 +12,7 @@ class Owner
   end
 
   def say_species
-      puts "I am a #{@species}."
+    puts "I am a #{@species}."
   end
 
   def buy_fish(name)
