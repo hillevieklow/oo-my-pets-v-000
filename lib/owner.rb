@@ -15,6 +15,10 @@ class Owner
     @@all
   end
 
+  def self.count
+    @@all.size
+  end
+
   def say_species
     "I am a #{@species}."
   end
@@ -49,7 +53,7 @@ class Owner
   end
 
   def list_pets
-    
+
   end
 
 end
